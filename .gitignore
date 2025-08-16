@@ -1,0 +1,42 @@
+node_modules
+**/node_modules
+
+_site
+/dist
+.dumi/tmp
+.dumi/tmp-test
+.dumi/tmp-production
+
+**/dist
+/.vscode
+/es
+/lib
+
+.DS_STORE
+storybook-static
+npm-debug.log*
+yarn-error.log
+
+/coverage
+.idea
+package-lock.json
+.vscode
+
+# Visual studio code
+.history
+*.log
+functions/*
+lambda/mock/index.js
+.temp/**
+
+# umi
+.dumi/tmp*
+
+# screenshot
+screenshot
+.firebase
+example/.temp/*
+.eslintcache
+example/.dumi
+example/server
+!/alussv2/
