@@ -1,30 +1,27 @@
 import { defineConfig } from 'father';
 
 export default defineConfig({
-  // more father config: https://github.com/umijs/father/blob/master/docs/config.md
   esm: {
-    input: 'components', // folder source utama
-    output: 'es', // folder output untuk ESM
+    input: 'components',
+    output: 'es',
     platform: 'browser',
     transformer: 'babel',
+    ignores: ['**/demo/**', '**/__tests__/**'],
   },
-  
-  // Build CommonJS output
   cjs: {
     input: 'components',
-    output: 'lib', // folder output untuk CJS
+    output: 'lib',
     platform: 'browser',
     transformer: 'babel',
+    ignores: ['**/demo/**', '**/__tests__/**'],
   },
-  
-  // Extra config seperti Ant Design
   extraBabelPlugins: [
     [
       'babel-plugin-import',
       {
-        libraryName: 'kui',
+        libraryName: 'cloneui',
         libraryDirectory: '',
-        style: true, // otomatis import less/css
+        style: true,
       },
     ],
   ],

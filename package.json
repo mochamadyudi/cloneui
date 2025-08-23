@@ -1,5 +1,5 @@
 {
-  "name": "kui",
+  "name": "cloneui",
   "version": "0.0.1",
   "description": "A modern component React",
   "scripts": {
@@ -136,6 +136,7 @@
     "cross-env": "^10.0.0",
     "dumi": "^2.4.13",
     "dumi-plugin-color-chunk": "^2.1.0",
+    "dumi-theme-antd-style": "^0.31.1",
     "eslint": "^8.23.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-compat": "^6.0.2",

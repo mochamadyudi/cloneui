@@ -1,8 +1,8 @@
 import React, { type FC, type PropsWithChildren } from 'react';
-import { LayoutProps } from 'kui';
+import { LayoutProps } from 'cloneui';
 
 const Layout: FC<PropsWithChildren<LayoutProps>> = ({ children }) => {
-	return <div className="test">{children}</div>;
+  return <div className="test">{children}</div>;
 };
 
 export default Layout;

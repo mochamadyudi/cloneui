@@ -23,24 +23,33 @@
       "@@/*": [
         ".dumi/tmp/*"
       ],
-      "kui": [
+      "cloneui": [
         "components/index.ts"
       ],
-      "kui/es/*": [
+      "cloneui/types": [
+        "types"
+      ],
+      "cloneui/types/*": [
+        "types/*",
+        "*"
+      ],
+      "cloneui/es/*": [
         "components/*"
       ],
-      "kui/lib/*": [
+      "cloneui/lib/*": [
         "components/*"
       ]
     }
   },
   "include": [
     ".dumirc.ts",
-    "**/*"
+    "components"
   ],
   "exclude": [
     "node_modules",
     "lib",
-    "es"
+    "es",
+    "**/__tests__/**",
+    "components/**/demo/*"
   ]
 }

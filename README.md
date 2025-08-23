@@ -1,7 +1,7 @@
-# kui
+# cloneui
 
-[![NPM version](https://img.shields.io/npm/v/kui.svg?style=flat)](https://npmjs.org/package/kui)
-[![NPM downloads](http://img.shields.io/npm/dm/kui.svg?style=flat)](https://npmjs.org/package/kui)
+[![NPM version](https://img.shields.io/npm/v/cloneui.svg?style=flat)](https://npmjs.org/package/cloneui)
+[![NPM downloads](http://img.shields.io/npm/dm/cloneui.svg?style=flat)](https://npmjs.org/package/cloneui)
 
 A modern component React
 
