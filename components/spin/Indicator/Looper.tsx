@@ -6,7 +6,7 @@ export interface IndicatorProps {
 	percent?: number;
 }
 
-export default function Looper(props: IndicatorProps) {
+const Looper: React.FC<IndicatorProps> = (props) => {
 	const { prefixCls, percent = 0 } = props;
 	const dotCls = `${prefixCls}-dot`;
 	const holderCls = `${dotCls}-holder`;
@@ -24,4 +24,6 @@ export default function Looper(props: IndicatorProps) {
 			</span>
 		</>
 	);
-}
+};
+
+export default Looper;
