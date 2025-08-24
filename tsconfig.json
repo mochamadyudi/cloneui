@@ -24,7 +24,7 @@
         ".dumi/tmp/*"
       ],
       "cloneui": [
-        "components"
+        "components/index.{ts|js}"
       ],
       "cloneui/types": [
         "types"
