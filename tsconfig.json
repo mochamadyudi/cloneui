@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "declaration": true,
     "jsx": "react",
     "jsxFactory": "React.createElement",
     "jsxFragmentFactory": "React.Fragment",
@@ -23,7 +24,7 @@
         ".dumi/tmp/*"
       ],
       "cloneui": [
-        "components/index.ts"
+        "components"
       ],
       "cloneui/types": [
         "types"
@@ -37,6 +38,10 @@
       ],
       "cloneui/lib/*": [
         "components/*"
+      ],
+      "cloneui/*": [
+        "components/*",
+        "*"
       ]
     }
   },
