@@ -33,7 +33,6 @@ export default defineConfig({
     exclude: [/index\/components/],
   },
   hash: true,
-  mfsu: false,
   mako: ['Darwin', 'Linux'].includes(os.type()) ? {} : false,
   crossorigin: {},
   runtimePublicPath: {},
