@@ -1,14 +1,12 @@
 ---
 hero:
   title: <b>Clone UI</b>
-  description: A modern React component library for building fast, elegant, and reusable UI.
+  description: A modern React component library for building fast, elegant, and reusable UI. <br/> Inspired by <b>Antd</b>
   actions:
-    - text: 🚀 Get Started
-      link: /guide
     - text: 📦 Components
       link: /components
     - text: 🌐 GitHub
-      link: https://github.com/your-repo/cloneui
+      link: https://github.com/mochamadyudi/cloneui
 
 nav:
   title: Home

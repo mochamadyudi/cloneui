@@ -22,5 +22,8 @@ export { default as theme } from './theme';
 export type { ButtonProps } from './button';
 export { default as Button } from './button';
 
+export { default as Typography } from './typography';
+export type { TypographyHeadingProps, TypographyLevel } from './typography';
+
 export { default as Spin } from './spin';
 export { type SpinProps } from './spin';
