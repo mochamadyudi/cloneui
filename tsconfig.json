@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "strict": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
     "jsx": "react",
+    "baseUrl": "./",
     "jsxFactory": "React.createElement",
     "jsxFragmentFactory": "React.Fragment",
     "lib": [
@@ -9,16 +13,12 @@
       "es2017"
     ],
     "experimentalDecorators": true,
-    "baseUrl": "./",
     "module": "esnext",
     "moduleResolution": "Bundler",
-    "strict": true,
     "strictNullChecks": true,
     "noImplicitAny": true,
     "noUnusedLocals": true,
     "stripInternal": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
     "paths": {
       "@@/*": [
         ".dumi/tmp/*"

@@ -6,14 +6,14 @@ export default defineConfig({
     output: 'es',
     platform: 'browser',
     transformer: 'babel',
-    ignores: ['**/demo/**', '**/__tests__/**'],
+    // ignores: ['**/demo/**', '**/__tests__/**'],
   },
   cjs: {
     input: 'components',
     output: 'lib',
     platform: 'browser',
     transformer: 'babel',
-    ignores: ['**/demo/**', '**/__tests__/**'],
+    // ignores: ['**/demo/**', '**/__tests__/**'],
   },
   extraBabelPlugins: [
     [

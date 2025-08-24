@@ -45,8 +45,16 @@ export default defineConfig({
   resolve: {
     docDirs: [{ type: 'doc', dir: 'docs' }],
     atomDirs: [{ type: 'component', dir: 'components' }],
+    codeBlockMode: 'passive',
   },
   define: {
     cloneUIReproduceVersion: version,
   },
+
+  analyze:
+    process.env.NODE_ENV === 'production'
+      ? false
+      : {
+          analyzerPort: 'auto',
+        },
 });

@@ -20,6 +20,7 @@
   "main": "lib/index.js",
   "module": "es/index.js",
   "typings": "es/index.d.ts",
+  "sideEffects": false,
   "auto-changelog": {
     "output": "CHANGELOG.md",
     "template": "keepachangelog",
@@ -64,7 +65,8 @@
   },
   "peerDependencies": {
     "react": ">=16.9.0",
-    "react-dom": ">=16.9.0"
+    "react-dom": ">=16.9.0",
+    "@ant-design/cssinjs-utils": "^1.1.3"
   },
   "exports": {
     ".": {
@@ -129,6 +131,7 @@
     "zustand": "^5.0.7"
   },
   "devDependencies": {
+    "@ant-design/cssinjs-utils": "^1.1.3",
     "@antfu/eslint-config": "^5.2.0",
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
