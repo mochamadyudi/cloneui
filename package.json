@@ -1,6 +1,6 @@
 {
   "name": "cloneui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A modern component React",
   "scripts": {
     "start": "npm run dev",
