@@ -5,10 +5,30 @@ import {
 	useCardPostContext,
 } from 'cloneui/es/card/partials/context';
 
+/**
+ * Props interface for the CardPost component
+ * @interface
+ * @extends {React.HTMLAttributes<HTMLDivElement>}
+ */
 export interface CardPostProps extends React.HTMLAttributes<HTMLDivElement> {
+	/** The content to be rendered inside the CardPost */
 	children: React.ReactNode;
 }
 
+/**
+ * CardPost component displays content within a card layout structure
+ *
+ * @example
+ * ```tsx
+ * import { CardPost } from 'cloneui';
+ *
+ * export default () => (
+ *   <CardPost>
+ *     <div>Card content goes here</div>
+ *   </CardPost>
+ * );
+ * ```
+ */
 const CardPost: React.FC<CardPostProps> = (props) => {
 	const { children, className: customClassName, style, ...restProps } = props;
 	const ctx = useCardPostContext();
@@ -28,6 +48,10 @@ const CardPost: React.FC<CardPostProps> = (props) => {
 	);
 };
 
+/**
+ * Internal wrapper component that provides CardPost context
+ * @private
+ */
 const InternalComponent: React.FC<CardPostProps> = (props) => {
 	const { children, ...restProps } = props;
 	return (

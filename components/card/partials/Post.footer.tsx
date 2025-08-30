@@ -4,13 +4,42 @@ import classNames from 'classnames';
 
 import { useCardPostContext } from './context';
 
+/**
+ * Common props interface for the PostFooter component
+ * @interface
+ * @extends {Omit<React.HTMLAttributes<HTMLDivElement>, 'title'>}
+ */
 interface CommonPostFooterProps
 	extends Omit<React.HTMLAttributes<HTMLDivElement>, 'title'> {}
 
+/**
+ * Props interface for the PostFooter component
+ * @interface
+ * @extends {CommonPostFooterProps}
+ */
 export interface CardPostFooterProps extends CommonPostFooterProps {
+	/** The content to be rendered inside the footer */
 	children: React.ReactNode;
 }
 
+/**
+ * PostFooter component displays content at the bottom of a Card
+ *
+ * @example
+ * ```tsx
+ * import { Card } from 'cloneui';
+ *
+ * export default () => (
+ *   <Card>
+ *     <Card.Post>
+ *       <Card.Post.Footer>
+ *         Footer content here
+ *       </Card.Post.Footer>
+ *     </Card.Post>
+ *   </Card>
+ * );
+ * ```
+ */
 const PostFooter: React.FC<CardPostFooterProps> = (props) => {
 	const { children, style, className, ...restProps } = props;
 

@@ -4,6 +4,12 @@ import classNames from 'classnames';
 
 import { useCardPostContext } from './context';
 
+/**
+ * Common props interface for the PostImage component that includes HTML image and div attributes
+ * @interface
+ * @extends {Pick<React.ImgHTMLAttributes<any>, 'src' | 'srcSet' | 'sizes' | 'alt' | 'dir' | 'loading'>}
+ * @extends {React.HTMLAttributes<HTMLDivElement>}
+ */
 interface CommonPostImageProps
 	extends Pick<
 			React.ImgHTMLAttributes<any>,
@@ -11,10 +17,45 @@ interface CommonPostImageProps
 		>,
 		React.HTMLAttributes<HTMLDivElement> {}
 
+/**
+ * Props interface for the PostImage component
+ * @interface
+ * @extends {CommonPostImageProps}
+ */
 interface CardPostImageProps extends CommonPostImageProps {
+	/** The content to be rendered inside the PostImage component */
 	children: React.ReactNode;
 }
 
+/**
+ * PostImage component for displaying images within a card post
+ *
+ * @example
+ * ```tsx
+ * // Basic usage
+ * <Card.Post>
+ *   <Card.PostImage src="image.jpg" alt="Example image">
+ *     <div>Optional overlay content</div>
+ *   </Card.PostImage>
+ * </Card.Post>
+ *
+ * // With additional attributes
+ * <Card.Post>
+ *   <Card.PostImage
+ *     src="image.jpg"
+ *     alt="Example image"
+ *     loading="lazy"
+ *     className="custom-class"
+ *     style={{ maxHeight: '300px' }}
+ *   >
+ *     Content
+ *   </Card.PostImage>
+ * </Card.Post>
+ * ```
+ *
+ * @param {CardPostImageProps} props - Component props
+ * @returns {React.ReactElement} PostImage component
+ */
 const PostImage: React.FC<CardPostImageProps> = (props) => {
 	const {
 		children,
